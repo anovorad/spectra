@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPECTRA Food Report</title>
+<style>
+.food-section { margin: 20px 0; }
+.food-note { font-size: 15px; font-style: italic; color: #555; margin: 10px 0 16px 0; }
+.cluster-box { margin: 18px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.cluster-box > summary { padding: 13px 16px; cursor: pointer; font-weight: 600; font-size: 17px; list-style: none; }
+.cluster-box > summary::-webkit-details-marker { display: none; }
+.cl-a > summary { background: #d4edda; color: #155724; }
+.cl-b > summary { background: #cce5ff; color: #004085; }
+.cl-c > summary { background: #e2e3e5; color: #383d41; }
+.cl-d > summary { background: #fff3cd; color: #856404; }
+.cl-e > summary { background: #f8d7da; color: #721c24; }
+.cl-f > summary { background: #f5c6cb; color: #491217; }
+.cluster-desc { font-size: 14px; font-style: italic; padding: 8px 16px; background: #fafafa; color: #555; border-bottom: 1px solid #dee2e6; }
+.food-header { display: grid; grid-template-columns: 24px 240px 100px 70px 240px; gap: 12px; padding: 10px 14px; background: #343a40; color: white; font-weight: 600; font-size: 15px; }
+.food-row { border-bottom: 1px solid #dee2e6; }
+.food-row summary { display: grid; grid-template-columns: 24px 240px 100px 70px 240px; gap: 12px; padding: 10px 14px; cursor: pointer; font-size: 16px; align-items: center; list-style: none; }
+.food-row summary::-webkit-details-marker { display: none; }
+.food-row summary::before { content: ""; display: inline-block; width: 0; height: 0; border-left: 7px solid #6c757d; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.food-row[open] summary::before { border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid #0f3460; border-bottom: 0; }
+.food-row summary:hover { background: #f0f7f0; }
+.fnum { text-align: right; font-variant-numeric: tabular-nums; }
+.fscore { text-align: right; font-weight: bold; font-variant-numeric: tabular-nums; }
+.freg { font-size: 14px; color: #555; }
+.fdetail { padding: 12px 16px 16px 56px; font-size: 15px; line-height: 1.6; color: #333; background: #fafafa; border-left: 3px solid #dee2e6; }
+.fdetail strong { color: #0f3460; }
+</style>
+</head>
+<body>
+
+<h1>super_visc.fat.3_sorted-on-name</h1>
+<!-- add  User, date generated, number of selected -->
+<p><strong>User:</strong> anovo | <strong>Generated:</strong> Mon Aug  3 02:05:21 PM PDT 2026
+</p>
+<p class="food-note">Click any food to expand its timing rationale and preparation notes. Clusters are ordered by importance; foods within each cluster are ranked by weighted score.</p></table>
+</details>
+<footer>SPECTRA Food Module | User: anovo | 109 foods | k=6 | Mon Aug  3 02:05:21 PM PDT 2026
+</footer>
+</body>
+</html>

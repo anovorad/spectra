@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPECTRA Food Report</title>
+<style>
+.food-section { margin: 20px 0; }
+.food-note { font-size: 15px; font-style: italic; color: #555; margin: 10px 0 16px 0; }
+.cluster-box { margin: 18px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.cluster-box > summary { padding: 13px 16px; cursor: pointer; font-weight: 600; font-size: 17px; list-style: none; }
+.cluster-box > summary::-webkit-details-marker { display: none; }
+.cl-a > summary { background: #d4edda; color: #155724; }
+.cl-b > summary { background: #cce5ff; color: #004085; }
+.cl-c > summary { background: #e2e3e5; color: #383d41; }
+.cl-d > summary { background: #fff3cd; color: #856404; }
+.cl-e > summary { background: #f8d7da; color: #721c24; }
+.cl-f > summary { background: #f5c6cb; color: #491217; }
+.cluster-desc { font-size: 14px; font-style: italic; padding: 8px 16px; background: #fafafa; color: #555; border-bottom: 1px solid #dee2e6; }
+.food-header { display: grid; grid-template-columns: 24px 240px 100px 70px 240px; gap: 12px; padding: 10px 14px; background: #343a40; color: white; font-weight: 600; font-size: 15px; }
+.food-row { border-bottom: 1px solid #dee2e6; }
+.food-row summary { display: grid; grid-template-columns: 24px 240px 100px 70px 240px; gap: 12px; padding: 10px 14px; cursor: pointer; font-size: 16px; align-items: center; list-style: none; }
+.food-row summary::-webkit-details-marker { display: none; }
+.food-row summary::before { content: ""; display: inline-block; width: 0; height: 0; border-left: 7px solid #6c757d; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.food-row[open] summary::before { border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid #0f3460; border-bottom: 0; }
+.food-row summary:hover { background: #f0f7f0; }
+.fnum { text-align: right; font-variant-numeric: tabular-nums; }
+.fscore { text-align: right; font-weight: bold; font-variant-numeric: tabular-nums; }
+.freg { font-size: 14px; color: #555; }
+.fdetail { padding: 12px 16px 16px 56px; font-size: 15px; line-height: 1.6; color: #333; background: #fafafa; border-left: 3px solid #dee2e6; }
+.fdetail strong { color: #0f3460; }
+</style>
+</head>
+<body>
+
+<h1>food_osteoarthritis3_vf3</h1>
+<!-- add  User, date generated, number of selected -->
+<p><strong>User:</strong> anovo | <strong>Generated:</strong> Mon Aug  3 02:11:08 PM PDT 2026
+</p>
+<p class="food-note">Click any food to expand its timing rationale and preparation notes. Clusters are ordered by importance; foods within each cluster are ranked by weighted score.</p><details class="cluster-box cl-a" open>
+<summary>Cluster 4 Elite Anti-inflammatory</summary>
+<div class="cluster-desc">Highest hsCRP, Endothelial, Cognitive scores. Berries, fatty fish, olive oil, tea, garlic, spinach, walnuts. Your SUPERFOODS.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+
+<details class="food-row"><summary><span>salmon</span><span class="fnum">150 g</span>
+<span  class="fscore">0.67</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Omega-3 anti-inflammatory effect persists overnight supporting sleep and recovery; vitamin D at any meal<br>
+<strong>Notes:</strong>Wild-caught has better omega-3 to omega-6 ratio and lower contaminants than farmed; highest overall score in this database</div></details>
+
+<details class="food-row"><summary><span>avocado</span><span class="fnum">100 g</span>
+<span  class="fscore">0.67</span>
+<span class="freg">1.lunch,2.dinner,3.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> MUFA-rich; pairs with any meal providing fat for fat-soluble nutrient absorption<br>
+<strong>Notes:</strong>Ripens off-tree; MUFA-rich with virtually zero net carbs; highest insulin sensitivity score in this database; excellent potassium source</div></details>
+
+<details class="food-row"><summary><span>sardines (canned)</span><span class="fnum">100 g</span>
+<span  class="fscore">0.63</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Bones provide calcium; very high omega-3; CoQ10; tiny fish = zero mercury; eat 2-3x weekly<br>
+<strong>Notes:</strong>Bones provide 382mg calcium per 100g; zero mercury (tiny fish); water-packed preferred over oil; eat 2-3x weekly</div></details>
+
+<details class="food-row"><summary><span>herring</span><span class="fnum">150 g</span>
+<span  class="fscore">0.61</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Second highest omega-3 after salmon; very high vitamin D; small fish = low mercury<br>
+<strong>Notes:</strong>Second highest omega-3 after salmon; small fish means negligible mercury; pickled versions add sodium</div></details>
+
+<details class="food-row"><summary><span>mussels</span><span class="fnum">100 g</span>
+<span  class="fscore">0.57</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High omega-3 and B12; good zinc and selenium; significant iron requires Ca-pairing<br>
+<strong>Notes:</strong>Excellent omega-3 shellfish; iron requires pairing strategy; sustainable aquaculture</div></details>
+
+<details class="food-row"><summary><span>blackberries</span><span class="fnum">150 g</span>
+<span  class="fscore">0.56</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Anthocyanins absorb best during active hours; high fiber slows any sugar impact<br>
+<strong>Notes:</strong>Highest fiber of common berries; frozen retains anthocyanins; seeds add insoluble fiber</div></details>
+
+<details class="food-row"><summary><span>raspberries</span><span class="fnum">150 g</span>
+<span  class="fscore">0.56</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest fiber-to-sugar ratio of common berries; ellagic acid for skin protection<br>
+<strong>Notes:</strong>Best fiber-to-sugar ratio of any common fruit; ellagic acid supports skin protection</div></details>
+
+<details class="food-row"><summary><span>blueberries</span><span class="fnum">150 g</span>
+<span  class="fscore">0.56</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Polyphenol absorption best during active hours; fructose metabolized more efficiently before evening<br>
+<strong>Notes:</strong>Wild lowbush varieties have 2x the anthocyanins of cultivated; frozen equals fresh</div></details>
+
+<details class="food-row"><summary><span>pomegranate</span><span class="fnum">100 g</span>
+<span  class="fscore">0.52</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Punicalagins convert to urolithin A (mitophagy activator); strongest fruit antioxidant; ellagic acid for skin<br>
+<strong>Notes:</strong>Urolithin A production requires specific gut bacteria; effects build over weeks of regular consumption</div></details>
+
+<details class="food-row"><summary><span>tuna</span><span class="fnum">150 g</span>
+<span  class="fscore">0.51</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High omega-3 and protein; mercury limits to 2 servings/week; selenium partially offsets mercury<br>
+<strong>Notes:</strong>Mercury limits to 2 servings weekly maximum; light tuna lower mercury than albacore; selenium partially offsets mercury</div></details>
+
+<details class="food-row"><summary><span>beet</span><span class="fnum">100 g</span>
+<span  class="fscore">0.50</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Peak NO production 2-3h post-ingestion; lunch timing maximizes afternoon exercise and BP benefit<br>
+<strong>Notes:</strong>Do not use mouthwash before eating - oral bacteria required to convert nitrate to nitrite; peak NO production 2-3h post-ingestion</div></details>
+
+<details class="food-row"><summary><span>strawberries</span><span class="fnum">150 g</span>
+<span  class="fscore">0.50</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High vitamin C with moderate anthocyanins; morning timing suits sugar metabolism<br>
+<strong>Notes:</strong>High pesticide residue crop, organic preferred; vitamin C enhances iron absorption</div></details>
+
+<details class="food-row"><summary><span>spinach</span><span class="fnum">100 g</span>
+<span  class="fscore">0.47</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest lutein and nitrate content; pair with fat for carotenoid absorption; oxalates reduced by cooking<br>
+<strong>Notes:</strong>Oxalates reduce calcium and iron absorption (partially beneficial given ferritin); cooking reduces oxalate; highest nitrate content of common vegetables</div></details>
+
+<details class="food-row"><summary><span>olive oil</span><span class="fnum">15 ml</span>
+<span  class="fscore">0.46</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Extra virgin for cold use (salad dressing) preserves oleocanthal COX inhibitor; do not deep-fry<br>
+<strong>Notes:</strong>Extra virgin only, cold use in salad dressings to preserve oleocanthal; heat destroys polyphenols; store dark and cool</div></details>
+
+<details class="food-row"><summary><span>arugula</span><span class="fnum">50 g</span>
+<span  class="fscore">0.45</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very high nitrates (like beet) plus cruciferous isothiocyanates; raw in salads preserves both<br>
+<strong>Notes:</strong>Very high nitrates like beet plus cruciferous isothiocyanates; eat raw in salads to preserve both compounds</div></details>
+
+<details class="food-row"><summary><span>walnuts</span><span class="fnum">30 g</span>
+<span  class="fscore">0.42</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest plant omega-3 (ALA); contains melatonin supporting circadian rhythm; polyphenol-rich<br>
+<strong>Notes:</strong>Store refrigerated (highest PUFA of nuts, oxidizes readily); contains melatonin; skins hold most polyphenols</div></details>
+
+<details class="food-row"><summary><span>cacao</span><span class="fnum">15 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Unsweetened powder in hot drink; very high flavanols (epicatechin); magnesium; iron content modest concern<br>
+<strong>Notes:</strong>Unsweetened powder only; very high flavanols (epicatechin); modest iron content is a ferritin consideration; Dutch-processed alkalized cacao destroys most flavanols</div></details>
+
+<details class="food-row"><summary><span>garlic</span><span class="fnum">10 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Crush and wait 10min before cooking to preserve allicin formation; anti-microbial and cardiovascular<br>
+<strong>Notes:</strong>Crush and rest 10 minutes before cooking to allow allicin formation; high heat destroys allicin</div></details>
+
+<details class="food-row"><summary><span>tea</span><span class="fnum">240 ml</span>
+<span  class="fscore">0.28</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> EGCG catechins; L-theanine for calm focus; iron chelation (positive for ferritin); no evening (caffeine)<br>
+<strong>Notes:</strong>EGCG plus L-theanine; iron chelation is beneficial given ferritin; morning and afternoon only due to caffeine; green tea highest in EGCG</div></details>
+
+</details>
+<!-- End of Cluster -->
+<details class="cluster-box cl-b">
+<summary>Cluster 3 Detox + Skin Specialists</summary>
+<div class="cluster-desc">High Hepatic Phase 2 + Skin BCC. Cruciferous vegetables + kefir. Unique sulforaphane/probiotic dimensions.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+<details class="food-row"><summary><span>kefir (unsweetened)</span><span class="fnum">240 ml</span>
+<span  class="fscore">0.57</span>
+<span class="freg">1.breakfast,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Richest probiotic food; tryptophan supports evening sleep; calcium for bones; fermented reduces lactose<br>
+<strong>Notes:</strong>Richest probiotic food (30+ strains versus 5-7 in yogurt); fermentation reduces lactose; user pairs with steak to block iron absorption</div></details>
+
+<details class="food-row"><summary><span>kale</span><span class="fnum">100 g</span>
+<span  class="fscore">0.52</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest lutein of common vegetables; sulforaphane from light steaming; nitrates for endothelial<br>
+<strong>Notes:</strong>Massage raw leaves with oil to reduce bitterness; light steaming preserves sulforaphane; highest lutein of common vegetables</div></details>
+
+<details class="food-row"><summary><span>brussels sprout</span><span class="fnum">100 g</span>
+<span  class="fscore">0.52</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Cruciferous; light steaming preserves sulforaphane while improving digestibility<br>
+<strong>Notes:</strong>Roasting caramelizes and reduces bitterness but degrades sulforaphane; light steaming preserves it; halve before cooking</div></details>
+
+<details class="food-row"><summary><span>broccoli</span><span class="fnum">150 g</span>
+<span  class="fscore">0.52</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Sulforaphane requires myrosinase (raw/lightly steamed); glucosinolate conversion optimal with mild cooking<br>
+<strong>Notes:</strong>Steam 3-4 min maximum to preserve myrosinase for sulforaphane conversion; boiling destroys it; frozen has less</div></details>
+
+<details class="food-row"><summary><span>broccoli sprouts</span><span class="fnum">30 g</span>
+<span  class="fscore">0.41</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest sulforaphane source (10-100x mature broccoli); eat raw or lightly steamed; small portion is potent<br>
+<strong>Notes:</strong>Highest sulforaphane food in existence; 30g delivers more than 150g mature broccoli</div></details>
+
+<details class="food-row"><summary><span>cauliflower</span><span class="fnum">150 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very low carb cruciferous; sulforaphane from gentle cooking; excellent keto substitute for starch<br>
+<strong>Notes:</strong>Excellent low-carb rice and potato substitute; light steaming preserves sulforaphane</div></details>
+
+<details class="food-row"><summary><span>cabbage</span><span class="fnum">150 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Glucosinolates support Phase 2 detox; fermented (sauerkraut) adds probiotic value<br>
+<strong>Notes:</strong>Fermented as sauerkraut adds probiotics; raw preserves glucosinolates; red variety adds anthocyanins</div></details>
+
+</details>
+<!-- End of Cluster -->
+<details class="cluster-box cl-c">
+<summary>Cluster 5 Staple Proteins & Neutrals</summary>
+<div class="cluster-desc">Moderate positive (0.05-0.15). Lean fish, poultry, eggs, cheese, MCT oil. Essential macros, pharmacologically quiet.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+<details class="food-row"><summary><span>cheese</span><span class="fnum">30 g</span><span  class="fscore">0.58</span><span class="freg">1.lunch,2.dinner,3.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Calcium absorption is vitamin-D dependent (any time with D); tryptophan in casein mildly supports evening relaxation<br>
+<strong>Notes:</strong>Aged varieties lower in lactose; gouda and edam provide vitamin K2; calcium blocks iron absorption when paired with meals</div></details>
+
+<details class="food-row"><summary><span>eggs</span><span class="fnum">100 g</span><span  class="fscore">0.55</span><span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Complete nutrition; choline for brain and liver; lutein/zeaxanthin for eyes; cholesterol supports hormones<br>
+<strong>Notes:</strong>Pasture-raised have higher omega-3 and vitamin D; yolk holds all the choline, lutein, and fat-soluble vitamins; do not overcook (oxidizes cholesterol)</div></details>
+
+<details class="food-row"><summary><span>hemp seeds</span><span class="fnum">30 g</span><span  class="fscore">0.55</span><span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Complete plant protein (all 9 EAAs); ideal 3:1 omega-6:omega-3 ratio; good zinc and magnesium<br>
+<strong>Notes:</strong>Best omega-6:omega-3 ratio of any seed (3:1 vs typical 10-20:1)</div></details>
+
+<details class="food-row"><summary><span>cashew</span><span class="fnum">30 g</span><span  class="fscore">0.51</span><span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Good magnesium and zinc source; moderate caloric density; pair with meals for mineral absorption<br>
+<strong>Notes:</strong>Never truly raw (steamed to remove urushiol); moderate oxalate content</div></details>
+
+<details class="food-row"><summary><span>pumpkin seeds</span><span class="fnum">30 g</span><span  class="fscore">0.51</span><span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest zinc per calorie of plant foods; magnesium and tryptophan support sleep if evening<br>
+<strong>Notes:</strong>Highest zinc per calorie of plant foods but also high iron (ferritin concern); raw or lightly roasted</div></details>
+
+<details class="food-row"><summary><span>cottage cheese</span><span class="fnum">150 g</span><span  class="fscore">0.46</span><span class="freg">1.dinner,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Slow-release casein protein ideal before bed for overnight MPS; high calcium; tryptophan for sleep<br>
+<strong>Notes:</strong>Casein digests slowly (6-8h) providing sustained amino acid release overnight</div></details>
+
+<details class="food-row"><summary><span>farmers cheese</span><span class="fnum">100 g</span><span  class="fscore">0.46</span><span class="freg">1.dinner,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Dense protein similar to cottage cheese; traditional Eastern European tvorog/quark; calcium-rich<br>
+<strong>Notes:</strong>Tvorog/quark - higher protein density than cottage cheese</div></details>
+
+<details class="food-row"><summary><span>crab</span><span class="fnum">100 g</span><span  class="fscore">0.43</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Good zinc and selenium; lean protein; low iron for shellfish; low mercury<br>
+<strong>Notes:</strong></div></details>
+
+<details class="food-row"><summary><span>scallops</span><span class="fnum">150 g</span><span  class="fscore">0.43</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very lean shellfish; high B12 and zinc; moderate omega-3; low mercury<br>
+<strong>Notes:</strong>Very lean shellfish; avoid wet scallops treated with sodium tripolyphosphate</div></details>
+
+<details class="food-row"><summary><span>cod</span><span class="fnum">150 g</span><span  class="fscore">0.43</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very lean white fish; extremely high selenium; good iodine for thyroid; very low iron<br>
+<strong>Notes:</strong>Very high selenium and iodine; extremely low mercury; lean white fish</div></details>
+
+<details class="food-row"><summary><span>lobster</span><span class="fnum">150 g</span><span  class="fscore">0.43</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Lean protein; good zinc and selenium; copper for SOD; low iron<br>
+<strong>Notes:</strong></div></details>
+
+<details class="food-row"><summary><span>shrimp</span><span class="fnum">150 g</span><span  class="fscore">0.43</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very high selenium; astaxanthin gives pink color; high protein; iodine for thyroid<br>
+<strong>Notes:</strong>Contains astaxanthin (the pink pigment); wild-caught preferred; very high selenium</div></details>
+
+<details class="food-row"><summary><span>milk</span><span class="fnum">240 ml</span><span  class="fscore">0.40</span><span class="freg">1.breakfast,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Tryptophan and calcium support evening sleep; protein; moderate lactose (natural sugar)<br>
+<strong>Notes:</strong>Calcium blocks iron absorption (useful with iron-rich meals); tryptophan supports evening sleep</div></details>
+
+<details class="food-row"><summary><span>oysters</span><span class="fnum">100 g</span><span  class="fscore">0.40</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest zinc food (78mg/100g); exceptional for testosterone; B12; moderate iron offset by zinc competition<br>
+<strong>Notes:</strong>Highest zinc food in existence; exceptional testosterone support; moderate iron partially blocked by zinc competition at DMT1</div></details>
+
+<details class="food-row"><summary><span>rockfish</span><span class="fnum">150 g</span><span  class="fscore">0.40</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate omega-3 Pacific fish; very low mercury; good selenium<br>
+<strong>Notes:</strong>Pacific species, very low mercury; moderate omega-3</div></details>
+
+<details class="food-row"><summary><span>clams</span><span class="fnum">100 g</span><span  class="fscore">0.40</span><span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest B12 food in existence (99mcg/100g); extremely high iron is major concern for ferritin<br>
+<strong>Notes:</strong>EXTREME iron (28mg/100g); limit to rare occasions; pair with tea and calcium; B12 benefit is unique</div></details>
+
+<details class="food-row"><summary><span>butter</span><span class="fnum">15 g</span><span  class="fscore">0.35</span><span class="freg">1.breakfast,2.lunch,3.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Butyrate uniquely supports colonocyte health; vitamin A and K2; use at any meal<br>
+<strong>Notes:</strong>Grass-fed provides more vitamin K2 and CLA; butyrate supports colonocytes; clarified as ghee removes casein and raises smoke point</div></details>
+
+<details class="food-row"><summary><span>turkey</span><span class="fnum">150 g</span><span  class="fscore">0.33</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest tryptophan of common meats; very lean; excellent ferritin-safe protein source<br>
+<strong>Notes:</strong>Highest tryptophan of common meats; very lean; ferritin-safe frequent protein option</div></details>
+
+<details class="food-row"><summary><span>chicken breast</span><span class="fnum">150 g</span><span  class="fscore">0.33</span><span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Leanest common protein; ideal post-workout; very low iron makes it ferritin-safe<br>
+<strong>Notes:</strong>Leanest common protein; very low iron makes it the safest frequent protein for ferritin management</div></details>
+
+<details class="food-row"><summary><span>mushrooms</span><span class="fnum">100 g</span><span  class="fscore">0.31</span><span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Beta-glucans for immunity; sun-exposed varieties provide vitamin D; ergothioneine is unique neuroprotective<br>
+<strong>Notes:</strong>Sun-exposed or UV-treated varieties provide vitamin D2; ergothioneine is a unique neuroprotective compound</div></details>
+
+<details class="food-row"><summary><span>catfish</span><span class="fnum">150 g</span><span  class="fscore">0.30</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Lean freshwater fish; low mercury; moderate omega-3; good protein source<br>
+<strong>Notes:</strong>Farmed US catfish is low mercury; moderate omega-3; lean protein</div></details>
+
+<details class="food-row"><summary><span>tilapia</span><span class="fnum">150 g</span><span  class="fscore">0.30</span><span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Lean affordable fish; unusually high omega-6 for fish (less cardiovascular benefit); good protein<br>
+<strong>Notes:</strong>Unusually high omega-6 for a fish; weakest omega-3 profile; farmed source quality varies widely</div></details>
+
+<details class="food-row"><summary><span>MCT oil</span><span class="fnum">15 ml</span><span  class="fscore">0.27</span><span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Morning bulletproof coffee provides ketone fuel for cognitive priming; avoid evening (energizing)<br>
+<strong>Notes:</strong>C8 and C10 medium-chain triglycerides; rapid ketogenesis; user adds to morning bulletproof coffee; start low for GI tolerance</div></details>
+
+<details class="food-row"><summary><span>cacao butter</span><span class="fnum">15 g</span><span  class="fscore">0.19</span><span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Stearic acid is LDL-neutral SFA; theobromine provides mild vasodilation; zero carb<br>
+<strong>Notes:</strong>Stearic acid is LDL-neutral saturated fat; contains theobromine; stable for cooking</div></details>
+
+</details>
+<!-- End of Cluster -->
+<details class="cluster-box cl-d">
+<summary>Cluster 2 Moderate Generalists</summary>
+<div class="cluster-desc">Broadly positive without standout peaks. Fruits, common vegetables, nuts, coffee, yogurt. Good not great.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+<details class="food-row"><summary><span>chia seeds</span><span class="fnum">20 g</span>
+<span  class="fscore">0.72</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Soak 10min before eating; gel forms soluble fiber; highest plant omega-3 per calorie; calcium-rich<br>
+<strong>Notes:</strong>Must be soaked or ground; phytate blocks iron (positive for ferritin)</div></details>
+
+<details class="food-row"><summary><span>pecans</span><span class="fnum">30 g</span>
+<span  class="fscore">0.61</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest polyphenol content of tree nuts; ellagic acid for skin; very low carb<br>
+<strong>Notes:</strong>Highest polyphenol content of tree nuts; store refrigerated (high PUFA, oxidation-prone)</div></details>
+
+<details class="food-row"><summary><span>pistachios</span><span class="fnum">30 g</span>
+<span  class="fscore">0.60</span>
+<span class="freg">1.lunch,2.breakfast,3.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Fat-soluble nutrients absorb with meals; moderate caloric density suits any mealtime<br>
+<strong>Notes:</strong>Buy unsalted in shell to slow consumption; unusual among nuts for containing lutein and zeaxanthin</div></details>
+
+<details class="food-row"><summary><span>yogurt (unsweetened)</span><span class="fnum">200 g</span>
+<span  class="fscore">0.57</span>
+<span class="freg">1.breakfast,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Probiotic fermented dairy; protein and calcium; unsweetened preserves insulin benefit<br>
+<strong>Notes:</strong>Greek strained variety has more protein and less lactose; live cultures required for probiotic benefit; unsweetened essential</div></details>
+
+<details class="food-row"><summary><span>flaxseeds</span><span class="fnum">15 g</span>
+<span  class="fscore">0.57</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> MUST be ground for bioavailability; highest lignan food; exceptional ALA omega-3; phytate blocks iron<br>
+<strong>Notes:</strong>Lignans raise SHBG (slight Free T reduction); iron chelation via phytate is positive for ferritin</div></details>
+
+<details class="food-row"><summary><span>beans</span><span class="fnum">100 g</span>
+<span  class="fscore">0.55</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High fiber and resistant starch; soak and cook thoroughly to reduce lectins; moderate GL<br>
+<strong>Notes:</strong>Soak overnight and cook thoroughly to reduce lectins and phytates; canned acceptable if rinsed well</div></details>
+
+<details class="food-row"><summary><span>peas</span><span class="fnum">100 g</span>
+<span  class="fscore">0.51</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate protein legume; fiber offsets moderate GL; good B-vitamin profile<br>
+<strong>Notes:</strong>Frozen retains nutrients better than canned; moderate GL</div></details>
+
+<details class="food-row"><summary><span>lentil sprouts</span><span class="fnum">100 g</span>
+<span  class="fscore">0.51</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Sprouting reduces lectins and phytate; increases vitamin C and protein digestibility<br>
+<strong>Notes:</strong>Iron content is concern for ferritin; pair with tea or calcium</div></details>
+
+<details class="food-row"><summary><span>hazelnuts</span><span class="fnum">30 g</span>
+<span  class="fscore">0.47</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest MUFA of tree nuts; excellent vitamin E; manganese for cartilage support<br>
+<strong>Notes:</strong>Highest MUFA of tree nuts; roasting reduces vitamin E; skins hold most polyphenols</div></details>
+
+<details class="food-row"><summary><span>asparagus</span><span class="fnum">100 g</span>
+<span  class="fscore">0.45</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Prebiotic inulin feeds Bifidobacterium; folate-rich; glutathione for liver support<br>
+<strong>Notes:</strong>Contains prebiotic inulin; produces distinctive urine odor in most people (harmless); thicker spears are more tender</div></details>
+
+<details class="food-row"><summary><span>fennel</span><span class="fnum">100 g</span>
+<span  class="fscore">0.41</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Anethole has mild estrogenic activity; supports digestion; good for nasal congestion<br>
+<strong>Notes:</strong>Anethole is mildly estrogenic; may slightly impact testosterone at high intake</div></details>
+
+<details class="food-row"><summary><span>eggplant</span><span class="fnum">150 g</span>
+<span  class="fscore">0.36</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Nasunin anthocyanin in skin; requires cooking; absorbs oil well (pair with olive oil for synergy)<br>
+<strong>Notes:</strong>Nasunin anthocyanin in skin only; absorbs oil readily so pair with olive oil; requires cooking</div></details>
+
+<details class="food-row"><summary><span>onion</span><span class="fnum">100 g</span>
+<span  class="fscore">0.36</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Quercetin highest in red onion outer layers; FOS prebiotic feeds beneficial bacteria<br>
+<strong>Notes:</strong>Quercetin concentrated in outer layers and red varieties; do not over-peel</div></details>
+
+<details class="food-row"><summary><span>apples</span><span class="fnum">180 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Pectin fiber best before carb-containing meals to slow glucose absorption<br>
+<strong>Notes:</strong>Pectin concentrated in skin; organic preferred (high pesticide residue crop)</div></details>
+
+<details class="food-row"><summary><span>papaya</span><span class="fnum">150 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Papain enzyme aids protein digestion and reduces inflammation; moderate sugar<br>
+<strong>Notes:</strong>Papain enzyme similar to bromelain; supports OA and recovery</div></details>
+
+<details class="food-row"><summary><span>pears</span><span class="fnum">180 g</span>
+<span  class="fscore">0.35</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High pectin fiber; low allergenicity; moderate GL offset by fiber content<br>
+<strong>Notes:</strong>Ripen at room temperature; pectin concentrated near skin; lower allergenicity than most fruits</div></details>
+
+<details class="food-row"><summary><span>pineapple</span><span class="fnum">150 g</span>
+<span  class="fscore">0.32</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Bromelain enzyme is anti-inflammatory and mucolytic; core contains most bromelain; high sugar limits frequency<br>
+<strong>Notes:</strong>Bromelain concentrated in core; OA and nasal congestion benefits; high GL limits to occasional</div></details>
+
+<details class="food-row"><summary><span>grapes</span><span class="fnum">150 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate sugar content suits midday insulin sensitivity; resveratrol in skin<br>
+<strong>Notes:</strong>Resveratrol in skin only; red and purple varieties far higher than green</div></details>
+
+<details class="food-row"><summary><span>squash</span><span class="fnum">150 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate beta-carotene; cooking enhances carotenoid release; moderate GL (lower than potato)<br>
+<strong>Notes:</strong>Winter varieties higher in beta-carotene; cooking improves carotenoid release</div></details>
+
+<details class="food-row"><summary><span>red radish</span><span class="fnum">100 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Cruciferous with mild isothiocyanates; very low calorie; add to salads raw for crunch<br>
+<strong>Notes:</strong>Peppery isothiocyanates similar to cruciferous family; eat raw</div></details>
+
+<details class="food-row"><summary><span>pumpkin</span><span class="fnum">150 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate beta-carotene; lower GL than potato; pairs well with fats for carotenoid absorption<br>
+<strong>Notes:</strong>Lower GL than potato but higher than most vegetables; cooking improves carotenoid bioavailability; seeds tracked separately as f_id 37</div></details>
+
+<details class="food-row"><summary><span>bell pepper</span><span class="fnum">150 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner,3.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest vitamin C of common vegetables; fat at meal improves carotenoid absorption<br>
+<strong>Notes:</strong>Red has 2x the vitamin C and 8x the beta-carotene of green; raw preserves vitamin C</div></details>
+
+<details class="food-row"><summary><span>kiwi</span><span class="fnum">100 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.breakfast,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Higher vitamin C than oranges; contains serotonin directly; clinical evidence for improving sleep onset<br>
+<strong>Notes:</strong>Two kiwis before bed improved sleep onset by 35% and duration by 13% in clinical trial</div></details>
+
+<details class="food-row"><summary><span>carrot</span><span class="fnum">100 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Fat-soluble beta-carotene absorption 3-5x higher with dietary fat at meal; cooking improves bioavailability<br>
+<strong>Notes:</strong>Cooking increases beta-carotene bioavailability 3-5x; requires dietary fat; user eats 100-200g daily</div></details>
+
+<details class="food-row"><summary><span>celery</span><span class="fnum">100 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Apigenin provides mild calming; nitrates support endothelial function; very low calorie<br>
+<strong>Notes:</strong>Organic preferred (high pesticide residue); leaves are more nutrient-dense than stalks</div></details>
+
+<details class="food-row"><summary><span>oranges</span><span class="fnum">150 g</span>
+<span  class="fscore">0.31</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Morning fruit maximizes vitamin C utilization; sugar suits earlier insulin window<br>
+<strong>Notes:</strong>Whole fruit preferred over juice (fiber intact, lower glycemic impact); vitamin C enhances iron absorption</div></details>
+
+<details class="food-row"><summary><span>mango</span><span class="fnum">150 g</span>
+<span  class="fscore">0.29</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High beta-carotene and vitamin C; mangiferin is unique anti-inflammatory; moderate-high sugar<br>
+<strong>Notes:</strong></div></details>
+
+<details class="food-row"><summary><span>watermelon</span><span class="fnum">200 g</span>
+<span  class="fscore">0.25</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Richest food source of L-citrulline (eNOS substrate); lycopene for skin/prostate; high GL limits frequency<br>
+<strong>Notes:</strong>Citrulline rind has 2x more than flesh; Endothelial benefit is unique among fruits</div></details>
+
+<details class="food-row"><summary><span>coffee</span><span class="fnum">240 ml</span>
+<span  class="fscore">0.25</span>
+<span class="freg">1.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Caffeine half-life 5-6h demands morning-only consumption to protect Sleep dimension (weight 3.16); polyphenols block iron absorption at breakfast<br>
+<strong>Notes:</strong>Morning only - caffeine half-life 5-6h disrupts sleep (dimension weight 3.16); polyphenols block iron absorption at breakfast; user adds MCT oil and cream as bulletproof</div></details>
+
+<details class="food-row"><summary><span>buckwheat</span><span class="fnum">100 g</span>
+<span  class="fscore">0.24</span>
+<span class="freg">1.lunch,2.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Pseudocereal with rutin (quercetin glycoside); resistant starch if cooled; gluten-free<br>
+<strong>Notes:</strong>Gluten-free pseudocereal; contains rutin (quercetin glycoside); cooling after cooking increases resistant starch</div></details>
+
+<details class="food-row"><summary><span>parsley</span><span class="fnum">20 g</span>
+<span  class="fscore">0.16</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Nutrient-dense herb; very high vitamin C and K per gram; apigenin content<br>
+<strong>Notes:</strong>Very high vitamin K; culinary quantities only; flat-leaf more flavorful than curly</div></details>
+
+<details class="food-row"><summary><span>lemons</span><span class="fnum">50 g</span>
+<span  class="fscore">0.16</span>
+<span class="freg">1.breakfast,2.lunch,3.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Juice used in water/dressings at any meal; vitamin C enhances iron absorption (caution with ferritin)<br>
+<strong>Notes:</strong>Juice for dressings and water; vitamin C enhances iron absorption, keep away from iron-rich meals</div></details>
+
+<details class="food-row"><summary><span>tangerines</span><span class="fnum">100 g</span>
+<span  class="fscore">0.14</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate vitamin C source; sugar suits morning/midday insulin window<br>
+<strong>Notes:</strong>Portable snack; lower vitamin C than oranges; vitamin C enhances iron absorption</div></details>
+
+</details>
+<!-- End of Cluster -->
+<details class="cluster-box cl-e">
+<summary>Cluster 1 Iron-loaded Meats</summary>
+<div class="cluster-desc">High Recovery + Testosterone BUT strong negative Ferritin. Beef, lamb, duck, liver, beef tallow. Require Ca-pairing.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+<details class="food-row"><summary><span>beef</span><span class="fnum">150 g</span>
+<span  class="fscore">0.50</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Post-workout meal maximizes leucine-driven mTOR for recovery; dinner provides overnight repair substrate<br>
+<strong>Notes:</strong>Grass-fed has better omega-3 and CLA profile; user eats 150-200g weekly paired with Ca-citrate and kefir to block iron absorption</div></details>
+
+<details class="food-row"><summary><span>lamb</span><span class="fnum">150 g</span>
+<span  class="fscore">0.49</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Very high zinc; CLA if grass-fed; high iron demands calcium pairing strategy<br>
+<strong>Notes:</strong>High zinc benefit offset by high iron; pair with calcium; grass-fed provides CLA</div></details>
+
+<details class="food-row"><summary><span>mutton</span><span class="fnum">150 g</span>
+<span  class="fscore">0.49</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Fattier and higher iron than lamb; strong flavor; CLA if grass-fed; requires Ca-pairing<br>
+<strong>Notes:</strong>Higher iron than lamb; strictly pair with calcium; limit to 1x/week</div></details>
+
+<details class="food-row"><summary><span>chicken liver</span><span class="fnum">100 g</span>
+<span  class="fscore">0.46</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Extremely nutrient-dense but VERY high iron; limit frequency to 1x/week maximum given ferritin<br>
+<strong>Notes:</strong>Extremely nutrient-dense but 9mg iron per 100g; limit to 1x weekly maximum given ferritin 233; pair with calcium and tea</div></details>
+
+<details class="food-row"><summary><span>chicken legs</span><span class="fnum">150 g</span>
+<span  class="fscore">0.45</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Dark meat with collagen from joints; glycine from skin/connective tissue; more zinc than breast<br>
+<strong>Notes:</strong>Skin and connective tissue provide glycine and collagen; more zinc than breast</div></details>
+
+<details class="food-row"><summary><span>goat</span><span class="fnum">150 g</span>
+<span  class="fscore">0.40</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Leaner than lamb with less iron; good zinc; lower SFA; widely consumed globally<br>
+<strong>Notes:</strong>Good lean red meat alternative to beef; lower iron load</div></details>
+
+<details class="food-row"><summary><span>bison</span><span class="fnum">150 g</span>
+<span  class="fscore">0.40</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Leanest red meat; excellent zinc:iron ratio; grass-fed has CLA; lower SFA than beef<br>
+<strong>Notes:</strong>Best red meat option for ferritin-conscious profile; pair with Ca</div></details>
+
+<details class="food-row"><summary><span>duck</span><span class="fnum">150 g</span>
+<span  class="fscore">0.39</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Higher MUFA than chicken; moderate iron (less than beef); rich flavor suits occasional rotation<br>
+<strong>Notes:</strong>Render and save fat for cooking; higher MUFA than other poultry; moderate iron</div></details>
+
+<details class="food-row"><summary><span>goose</span><span class="fnum">150 g</span>
+<span  class="fscore">0.39</span>
+<span class="freg">1.dinner,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High MUFA for poultry; moderate iron; rich flavor for occasional rotation<br>
+<strong>Notes:</strong>Pair with calcium source to block iron absorption</div></details>
+
+<details class="food-row"><summary><span>veal</span><span class="fnum">150 g</span>
+<span  class="fscore">0.36</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Moderate iron (less than beef); good zinc and B12; lighter red meat option with calcium pairing<br>
+<strong>Notes:</strong>Moderate iron (less than beef); lighter flavor; good zinc and B12</div></details>
+
+<details class="food-row"><summary><span>beef tallow</span><span class="fnum">15 ml</span>
+<span  class="fscore">0.21</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> High smoke point for cooking; vitamin K2 and CLA if grass-fed; zero carb<br>
+<strong>Notes:</strong>High smoke point suitable for high-heat cooking; grass-fed provides vitamin K2 and CLA; zero carbohydrate</div></details>
+
+</details>
+<!-- End of Cluster -->
+<details class="cluster-box cl-f">
+<summary>Cluster 6 Low-value / Limit</summary>
+<div class="cluster-desc">Near-zero or negative scores. Grains, pork (allergen), empty foods (water, lettuce, dill), sour cream.</div>
+<div class="food-header"><span></span><span>Food</span><span class="fnum">Serving</span><span class="fscore">Score</span><span>Regimen</span></div>
+<details class="food-row"><summary><span>sour cream</span><span class="fnum">30 g</span>
+<span  class="fscore">0.21</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Condiment quantity; fermented dairy; high fat low carb; used as topping/dressing<br>
+<strong>Notes:</strong>Condiment quantity only; fermentation reduces lactose; full-fat preferred</div></details>
+
+<details class="food-row"><summary><span>whipping cream</span><span class="fnum">30 ml</span>
+<span  class="fscore">0.19</span>
+<span class="freg">1.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Bulletproof coffee addition; virtually zero carb; pure fat for ketone production<br>
+<strong>Notes:</strong>User adds 30-40ml to morning coffee; virtually zero carbohydrate; pure fat for ketone production</div></details>
+
+<details class="food-row"><summary><span>coconut oil</span><span class="fnum">15 ml</span>
+<span  class="fscore">0.19</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Fractionated/liquid form is primarily MCTs (C8/C10); rapid ketogenesis; morning bulletproof coffee base<br>
+<strong>Notes:</strong>EXPERIMENTAL ENTRY: unfractionated form is high in lauric acid (LDL-raising). User consumes fractionated liquid MCT form instead - see f_id 57</div></details>
+
+<details class="food-row"><summary><span>lettuce</span><span class="fnum">100 g</span>
+<span  class="fscore">0.19</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Low nutrient density but provides bulk and hydration in salads; mild nitrate content<br>
+<strong>Notes:</strong>Romaine has 3x the nutrients of iceberg; provides volume with minimal calories</div></details>
+
+<details class="food-row"><summary><span>cilantro</span><span class="fnum">10 g</span>
+<span  class="fscore">0.15</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Herb used in small quantities as garnish; heavy metal chelation modest at typical portions<br>
+<strong>Notes:</strong>Culinary quantity only; genetic variation makes it taste like soap to some people</div></details>
+
+<details class="food-row"><summary><span>mineral water</span><span class="fnum">500 ml</span>
+<span  class="fscore">0.14</span>
+<span class="freg">1.breakfast,2.lunch,3.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Hydration baseline; brand-dependent mineral content (calcium, magnesium, bicarbonate)<br>
+<strong>Notes:</strong>Mineral content is brand-dependent; check label for calcium, magnesium, and bicarbonate; hydration baseline</div></details>
+
+<details class="food-row"><summary><span>cucumber</span><span class="fnum">150 g</span>
+<span  class="fscore">0.14</span>
+<span class="freg">1.lunch,2.dinner,3.breakfast</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Hydrating; virtually zero glycemic load; suitable anytime<br>
+<strong>Notes:</strong>Peel contains most nutrients; virtually zero glycemic impact; hydrating</div></details>
+
+<details class="food-row"><summary><span>banana</span><span class="fnum">120 g</span>
+<span  class="fscore">0.13</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Tryptophan + B6 + Mg combination supports serotonin/melatonin; best as post-workout glycogen source<br>
+<strong>Notes:</strong>High GL; restrict to post-workout or breakfast; avoid ripe bananas (higher GL)</div></details>
+
+<details class="food-row"><summary><span>bread</span><span class="fnum">50 g</span>
+<span  class="fscore">0.10</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Carbohydrate tolerance higher in morning due to diurnal insulin sensitivity; avoid evening glycemic load<br>
+<strong>Notes:</strong>Sourdough fermentation reduces phytate and lowers GL; iron-fortified (ferritin concern); gluten-containing</div></details>
+
+<details class="food-row"><summary><span>wheat</span><span class="fnum">100 g</span>
+<span  class="fscore">0.10</span>
+<span class="freg">1.breakfast,2.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Gluten-containing; high GL; iron-fortified (bad for ferritin); minimize per pyramid tier 3<br>
+<strong>Notes:</strong>Gluten-containing; iron-fortified (ferritin concern); highest inflammatory potential of grains for this user</div></details>
+
+<details class="food-row"><summary><span>dill</span><span class="fnum">10 g</span>
+<span  class="fscore">0.10</span>
+<span class="freg">1.lunch,2.dinner</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Herb garnish; modest antioxidant contribution at typical culinary quantities<br>
+<strong>Notes:</strong>Culinary garnish; pairs traditionally with fish and kefir</div></details>
+
+<details class="food-row"><summary><span>pork</span><span class="fnum">150 g</span>
+<span  class="fscore">0.05</span>
+<span class="freg">1.never</span></summary>
+<div class="fdetail"><strong>Timing:</strong> DOCUMENTED ALLERGEN - EXCLUDE FROM ALL MEAL PLANS<br>
+<strong>Notes:</strong>DOCUMENTED ALLERGEN - EXCLUDE FROM ALL MEAL PLANS</div></details>
+
+<details class="food-row"><summary><span>potato</span><span class="fnum">150 g</span>
+<span  class="fscore">0.05</span>
+<span class="freg">1.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> If consumed, restrict to post-workout lunch for glycogen replenishment; high GL demands insulin-sensitive window<br>
+<strong>Notes:</strong>Highest GL vegetable in this database; if consumed, boil and cool to increase resistant starch; never fry (acrylamide forms above 120C)</div></details>
+
+<details class="food-row"><summary><span>brown rice</span><span class="fnum">100 g</span>
+<span  class="fscore">0.03</span>
+<span class="freg">1.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> If consumed, restrict to post-workout lunch; moderate GL; magnesium content; arsenic concern limits frequency<br>
+<strong>Notes:</strong>Rinse thoroughly and cook in excess water to reduce inorganic arsenic; limit frequency</div></details>
+
+<details class="food-row"><summary><span>rice</span><span class="fnum">100 g</span>
+<span  class="fscore">-0.05</span>
+<span class="freg">1.lunch</span></summary>
+<div class="fdetail"><strong>Timing:</strong> Highest GL of common foods; strictly post-workout glycogen replenishment only; 1-2x/month frequency<br>
+<strong>Notes:</strong>Highest GL in this database; user consumes 1-2x monthly as pilaf or with sushi; arsenic concern with frequent use</div></details>
+
+</details>
+<!-- End of Cluster -->
+<h2 class="dims">Dimensions &amp; Weights</h2>
+<details>
+<summary>Click to expand dimension weights</summary>
+<table class="dim-table">
+<tr><th>Dim.ID</th><th>Dimension</th><th>Deviation</th><th>Weight</th></tr>
+<tr><td>103</td><td>Cognitive Function</td><td>0.3</td><td>1.83</td></tr>
+<tr><td>25</td><td>Cortisol</td><td>1.74</td><td>1.32</td></tr>
+<tr><td>109</td><td>Endothelial Function</td><td>0.3</td><td>1.83</td></tr>
+<tr><td>110</td><td>Eye Health</td><td>0.2</td><td>2.24</td></tr>
+<tr><td>9</td><td>Ferritin</td><td>2.59</td><td>1.61</td></tr>
+<tr><td>102</td><td>Fibrinolysis</td><td>0.5</td><td>1.41</td></tr>
+<tr><td>23</td><td>Free Testosterone</td><td>0.35</td><td>1.7</td></tr>
+<tr><td>113</td><td>HDL/LDL Ratio</td><td>0.2</td><td>2.24</td></tr>
+<tr><td>112</td><td>Hepatic Phase 2 Support</td><td>0.8</td><td>1.12</td></tr>
+<tr><td>36</td><td>hsCRP</td><td>9</td><td>3</td></tr>
+<tr><td>104</td><td>Immunity</td><td>0.7</td><td>1.2</td></tr>
+<tr><td>114</td><td>Insulin Sensitivity</td><td>0.5</td><td>1.41</td></tr>
+<tr><td>106</td><td>Nasal Congestion</td><td>0.1</td><td>3.16</td></tr>
+<tr><td>111</td><td>Osteoarthritis</td><td>0.2</td><td>2.24</td></tr>
+<tr><td>107</td><td>Post Exercise Recovery</td><td>0.5</td><td>1.41</td></tr>
+<tr><td>5</td><td>sdLDL + LDL-P</td><td>3</td><td>1.73</td></tr>
+<tr><td>108</td><td>Skin BCC</td><td>0.5</td><td>1.41</td></tr>
+<tr><td>105</td><td>Sleep</td><td>0.1</td><td>3.16</td></tr>
+<tr><td>22</td><td>Total Testosterone</td><td>0.49</td><td>1.42</td></tr>
+<tr><td>101</td><td>Visceral Fat</td><td>0.3</td><td>1.83</td></tr>
+</table>
+</details>
+<footer>SPECTRA Food Module | User: anovo | 109 foods | k=6 | Mon Aug  3 02:11:08 PM PDT 2026
+</footer>
+</body>
+</html>

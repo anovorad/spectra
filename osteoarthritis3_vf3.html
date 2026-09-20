@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPECTRA Superstack Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1100px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #1a1a2e; }
+h1 { color: #16213e; border-bottom: 3px solid #0f3460; padding-bottom: 10px; }
+h2 { color: #0f3460; margin-top: 30px; cursor: pointer; }
+h2:before { content: ''; display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+h2.superfoods:before { background: #e94560; }
+h2.doses:before { background: #533483; }
+h2.warnings:before { background: #f39c12; }
+h2.synergy:before { background: #27ae60; }
+h2.dims:before { background: #3498db; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 14px; }
+th { background: #0f3460; color: white; padding: 8px 12px; text-align: left; position: sticky; top: 0; }
+td { padding: 6px 12px; border-bottom: 1px solid #dee2e6; }
+tr:hover { background: #e8f4fd; }
+tr.starred td { font-weight: 600; }
+tr.excluded { opacity: 0.5; text-decoration: line-through; }
+.score { font-weight: bold; color: #0f3460; }
+.load-box { display: inline-block; background: #e8f4fd; padding: 4px 10px; border-radius: 4px; margin: 2px; font-size: 13px; }
+.warning-box { background: #fff3cd; border-left: 4px solid #f39c12; padding: 10px 15px; margin: 8px 0; border-radius: 4px; }
+.compensatory-box { background: #f0f0f0; border-left: 4px solid #6c757d; padding: 10px 15px; margin: 8px 0; border-radius: 4px; }
+.no-action { color: #27ae60; font-weight: 600; }
+.action-needed { color: #e94560; font-weight: 600; }
+details { margin: 4px 0; }
+details summary { cursor: pointer; padding: 5px 0; }
+details summary:hover { color: #0f3460; }
+.benefit-text { color: #555; font-size: 13px; padding: 5px 0 5px 20px; border-left: 2px solid #dee2e6; margin: 5px 0; }
+.tag { display: inline-block; background: #e8f4fd; color: #0f3460; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin: 1px; }
+.tag.starred { background: #d4edda; color: #155724; }
+.dim-table td:nth-child(3), .dim-table td:nth-child(4) { text-align: right; }
+@media print { details { open; } body { background: white; } }
+
+
+.dose-section { margin: 20px 0; }
+.dose-note { font-size: 15px; font-style: italic; color: #555; margin: 10px 0 16px 0; line-height: 1.5; }
+.dose-header { display: grid; grid-template-columns: 24px 34px 230px 115px 115px 125px 1fr; gap: 12px; padding: 12px 14px; background: #343a40; color: white; font-weight: 600; font-size: 16px; border-radius: 6px 6px 0 0; }
+
+.dose-row { border-bottom: 1px solid #dee2e6; }
+.dose-row summary { display: grid; grid-template-columns: 24px 34px 230px 115px 115px 125px 1fr; gap: 12px; padding: 11px 14px; cursor: pointer; font-size: 16px; align-items: center; list-style: none; }
+.dose-row summary::-webkit-details-marker { display: none; }
+.dose-row summary::before { content: ""; display: inline-block; width: 0; height: 0; border-left: 7px solid #6c757d; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.dose-row[open] summary::before { border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid #0f3460; border-bottom: 0; }
+.dose-row summary:hover { background: #f0f7f0; }
+.dose-row.warn summary { background: #fff3cd; }
+.dose-row.warn summary:hover { background: #ffe8a1; }
+
+.star { color: #27ae60; font-weight: bold; text-align: center; font-size: 17px; }
+.hitch { color: #adb5bd; text-align: center; font-size: 17px; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.na { color: #adb5bd; font-style: italic; text-align: right; }
+.warn-text { color: #c0392b; font-weight: 600; font-size: 14px; }
+.benefit { padding: 12px 16px 16px 72px; font-size: 15px; line-height: 1.6; color: #333; background: #fafafa; border-left: 3px solid #dee2e6; }
+
+</style>
+
+</head>
+<body>
+<h1>osteoarthritis3_vf3</h1>
+<!-- add  User, date generated, number of selected -->
+<p><strong>User:</strong> anovo | <strong>Generated:</strong> Mon Aug  3 02:10:24 PM PDT 2026
+</p>
+<h2 class="superfoods">Supplement Stack</h2>
+<table>
+<tr><th>ID</th><th>Supplement</th><th>Dose</th><th>Units</th><th>Regimen</th><th>Score</th></tr>
+<tr class="starred"><td>26</td><td>Alpha Lipoic Acid</td><td>1</td><td>capsule</td><td>bedtime</td><td class="score">1.05</td></tr>
+<tr class="starred"><td>15</td><td>Berberine + Ceylon Cinnamon</td><td>1</td><td>capsules</td><td>dinner</td><td class="score">2.10</td></tr>
+<tr class="starred"><td>22</td><td>C-500</td><td>1</td><td>capsule</td><td>bedtime</td><td class="score">0.60</td></tr>
+<tr class="starred"><td>90</td><td>CLA 800mg</td><td>3</td><td>softgel</td><td>dinner</td><td class="score">1.20</td></tr>
+<tr class="starred"><td>18</td><td>Fenugreek</td><td>1</td><td>capsule</td><td>dinner</td><td class="score">1.50</td></tr>
+<tr class="starred"><td>32</td><td>Full Spectrum Mineral Caps</td><td>1</td><td>capsule</td><td>morning</td><td class="score">0.75</td></tr>
+<tr class="starred"><td>16</td><td>GABA L-Theanine Stress B</td><td>1</td><td>lozenge</td><td>bedtime</td><td class="score">0.60</td></tr>
+<tr class="starred"><td>23</td><td>Glucosamine Chondroitin</td><td>3</td><td>capsule</td><td>lunch</td><td class="score">1.35</td></tr>
+<tr class="starred"><td>46</td><td>Green Tea Extract</td><td>1</td><td>capsule</td><td>morning</td><td class="score">1.65</td></tr>
+<tr class="starred"><td>7</td><td>Hyaluronic Acid with MSM</td><td>1</td><td>capsule</td><td>lunch</td><td class="score">1.05</td></tr>
+<tr class="starred"><td>66</td><td>Lutein and Zeaxanthin</td><td>1</td><td>softgel</td><td>morning</td><td class="score">1.05</td></tr>
+<tr class="starred"><td>35</td><td>MSM</td><td>1</td><td>tablet</td><td>lunch</td><td class="score">1.05</td></tr>
+<tr class="starred"><td>25</td><td>Malic Acid</td><td>1</td><td>capsule</td><td>lunch</td><td class="score">0.75</td></tr>
+<tr class="starred"><td>75</td><td>Methyl Folate</td><td>1</td><td>capsule</td><td>lunch</td><td class="score">0.60</td></tr>
+<tr class="starred"><td>1</td><td>Multi Collagen Protein</td><td>2</td><td>capsule</td><td>morning</td><td class="score">1.80</td></tr>
+<tr class="starred"><td>2</td><td>Omega-3 Fish Oil</td><td>1</td><td>softgel</td><td>dinner</td><td class="score">1.05</td></tr>
+<tr class="starred"><td>17</td><td>Turmeric Curcumin Complex</td><td>1</td><td>capsule</td><td>dinner</td><td class="score">1.50</td></tr>
+</table>
+<div style="margin: 15px 0;"><span class="load-box"><strong>morning: 4:</strong></span>
+<span class="load-box"><strong>dinner: 5:</strong></span>
+<span class="load-box"><strong>lunch: 5:</strong></span>
+<span class="load-box"><strong>bedtime: 3:</strong></span>
+</div>
+<p><strong>Supplements:</strong> 17 selected</p>
+<h2 class="doses">Cumulative Doses &amp; Benefits</h2>
+<p class="dose-note">Click any ingredient to expand its benefits.
+<span class="star">&#9733;</span> starred = primary selection; <span class="hitch">&#9675;
+</span> = hitchhiker from multi-ingredient product. &mdash; = supplement-only compound; 
+n/a = food source exists but tracking incomplete.</p>
+
+<div class="dose-section">
+<div class="dose-header">
+<span></span><span></span><span>Ingredient</span><span class="num">Stack</span><span class="num">Diet</span>
+<span class="num">Total</span><span>Warnings</span>
+</div>
+
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Alpha-Lipoic Acid </span><span class="num">310 mg</span><span class="num">&mdash;</span><span class="num">310.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Mitochondrial antioxidant; regenerates glutathione and vitamin C/E; chelates iron via thiol group (critical for elevated ferritin); improves insulin sensitivity via AMPK activation; neuroprotective</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Benfotiamine </span><span class="num">12.5 mg</span><span class="num">&mdash;</span><span class="num">12.50 mg</span><span class="warn-text"></span></summary><div class="benefit">Fat-soluble synthetic thiamine derivative; 5x greater bioavailability than thiamine; potently inhibits AGE (advanced glycation end-product) formation; protects against diabetic neuropathy and retinopathy; blocks hexosamine and PKC pathways</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Berberine </span><span class="num">600 mg</span><span class="num">&mdash;</span><span class="num">600.00 mg</span><span class="warn-text"></span></summary><div class="benefit">blood sugar reduction (AMPK activation); cholesterol and triglyceride reduction; blood pressure reduction; testosterone support; weight management; anti-inflammatory; cortisol reduction; TMAO-producing gut bacteria suppression; allergy relief; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Black Pepper Extract </span><span class="num">3 mg</span><span class="num">&mdash;</span><span class="num">3.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Inhibits glucuronidation and CYP3A4 increasing bioavailability of curcumin (2000%), CoQ10, resveratrol, and others; thermogenic; enhances nutrient absorption broadly; mild anti-inflammatory</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>CLA (Conjugated Linoleic Acid) </span><span class="num">2400 mg</span><span class="num">&mdash;</span><span class="num">2400.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Isomers (c9t11 and t10c12) reduce adipocyte lipid storage via PPAR-gamma modulation; improves body composition (fat:lean ratio); anti-inflammatory t10c12 isomer; may support insulin sensitivity in some populations</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Calcium </span><span class="num">180 mg</span><span class="num">342.99 mg</span><span class="num">522.99 mg</span><span class="warn-text"></span></summary><div class="benefit">bone and teeth strength; muscle function; nerve signal transmission; blood vessel function; hormone release; testosterone support; sleep support; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Chondroitin Sulfate </span><span class="num">600 mg</span><span class="num">&mdash;</span><span class="num">600.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Glycosaminoglycan component of cartilage extracellular matrix; inhibits MMPs and IL-1beta reducing cartilage degradation; improves synovial fluid viscosity; synergistic with glucosamine for OA pain reduction; may slow joint space narrowing over 2+ years</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Chromium </span><span class="num">50 mcg</span><span class="num">n/a</span><span class="num">50.00 mcg</span><span class="warn-text"></span></summary><div class="benefit">blood sugar regulation; insulin function support; diabetes and pre-diabetes management; cholesterol management; athletic performance; cortisol reduction; visceral fat burning</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Cinnamon Extract </span><span class="num">50 mg</span><span class="num">&mdash;</span><span class="num">50.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Type-A procyanidins improve insulin receptor sensitivity; reduces fasting glucose and HbA1c; cinnamaldehyde has antimicrobial properties; AMPK activation supports metabolic flexibility</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Citrus Bioflavonoids </span><span class="num">10 mg</span><span class="num">&mdash;</span><span class="num">10.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Mixed flavonoid complex from citrus peel (hesperidin, naringin, eriocitrin, rutin); enhances vitamin C absorption and recycling; strengthens capillary integrity reducing fragility and bruising; venotonic (improves venous tone in chronic venous insufficiency); mild anti-inflammatory via NF-kB modulation; antioxidant sparing effect on ascorbate</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>CoQ10 </span><span class="num">5 mg</span><span class="num">n/a</span><span class="num">5.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Mitochondrial electron carrier (Complex I to III); essential for ATP synthesis; potent lipid-soluble antioxidant; supports endothelial function; reduces statin-induced myopathy; cardioprotective</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Collagen Peptides (Type II) </span><span class="num">1350 mg</span><span class="num">&mdash;</span><span class="num">1350.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Undenatured type II collagen (UC-II) induces oral tolerance via gut-associated immune tissue; reduces T-cell attack on joint cartilage; more effective than glucosamine+chondroitin in OA trials at only 40mg/day; supports joint comfort and mobility</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Copper </span><span class="num">0.5 mg</span><span class="num">1.05 mg</span><span class="num">1.55 mg</span><span class="warn-text"></span></summary><div class="benefit">cardiovascular health; blood pressure regulation; iron absorption and utilization; thyroid hormone balance; antioxidant (SOD cofactor); anti-inflammatory; melanin synthesis; bone density; connective tissue integrity; antimicrobial; sleep promotion</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Curcumin </span><span class="num">750 mg</span><span class="num">&mdash;</span><span class="num">750.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Potent NF-kB inhibitor reducing systemic inflammation; inhibits COX-2 and LOX; antioxidant; supports hepatic detox Phase II; anti-amyloid properties; poor bioavailability requires piperine or phospholipid formulation</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>EPA + DHA </span><span class="num">475 mg</span><span class="num">342.86 mg</span><span class="num">817.86 mg</span><span class="warn-text"></span></summary><div class="benefit">EPA reduces inflammation via resolvin/protectin synthesis and COX-2 competition with arachidonic acid; DHA structural component of neuronal membranes; triglyceride lowering; anti-arrhythmic; endothelial support</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Fenugreek </span><span class="num">1000 mg</span><span class="num">&mdash;</span><span class="num">1000.00 mg</span><span class="warn-text"></span></summary><div class="benefit">blood sugar reduction (slows gastric sugar absorption); insulin stimulation; anti-inflammatory; testosterone support; cortisol reduction; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Folate </span><span class="num">1340 mcg</span><span class="num">200.69 mcg</span><span class="num">1540.69 mcg</span><span class="warn-text">! exceeds max_daily (1000 mcg)</span></summary><div class="benefit">Methylfolate (5-MTHF) is the active form; essential for homocysteine recycling via methionine synthase; DNA methylation; red blood cell synthesis; neural tube development; synergistic with B12</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>GABA </span><span class="num">25 mg</span><span class="num">&mdash;</span><span class="num">25.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Inhibitory neurotransmitter; anxiolytic and calming; limited BBB penetration from oral dosing but still shows clinical effect on relaxation and sleep onset; reduces sympathetic tone</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Glucosamine </span><span class="num">750 mg</span><span class="num">&mdash;</span><span class="num">750.00 mg</span><span class="warn-text"></span></summary><div class="benefit">cartilage building block; joint health; hyaluronic acid synthesis stimulation; anti-inflammatory; antioxidant; gut health; cardiovascular risk reduction; pain reduction; allergy relief</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Green Tea Extract </span><span class="num">600 mg</span><span class="num">&mdash;</span><span class="num">600.00 mg</span><span class="warn-text"></span></summary><div class="benefit">cardiovascular health; weight management; cancer prevention; antioxidant; anti-inflammatory; skin health; cognitive function; visceral fat burning; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Hyaluronic Acid (oral) </span><span class="num">450 mg</span><span class="num">&mdash;</span><span class="num">450.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Glycosaminoglycan supporting synovial fluid viscosity; hydrates dermal extracellular matrix; oral bioavailability confirmed in human studies; supports joint cushioning; skin elasticity and wound healing; molecular weight matters (low MW better absorbed)</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Inositol (myo-inositol) </span><span class="num">5 mg</span><span class="num">&mdash;</span><span class="num">5.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Insulin second messenger in PI3K/Akt signaling; improves insulin sensitivity; reduces testosterone in PCOS (not relevant here); anxiolytic via GABA-A receptor modulation; supports healthy liver fat metabolism</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Iodine </span><span class="num">56.25 mcg</span><span class="num">n/a</span><span class="num">56.25 mcg</span><span class="warn-text"></span></summary><div class="benefit">thyroid hormone production; metabolism regulation; bone and brain development; thyroid protection after radiation; diabetic foot ulcer treatment</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>L-Theanine </span><span class="num">25 mg</span><span class="num">&mdash;</span><span class="num">25.00 mg</span><span class="warn-text"></span></summary><div class="benefit">relaxation without sedation; cognitive function; focus and attention; stress and anxiety reduction; GABA, dopamine, serotonin modulation; sleep quality; fat metabolism; blood sugar regulation; blood pressure reduction; immune support; neuroprotection; anti-inflammatory; cortisol reduction; allergy relief; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Lutein </span><span class="num">40 mg</span><span class="num">3.26 mg</span><span class="num">43.26 mg</span><span class="warn-text"></span></summary><div class="benefit">macular pigment accumulation (fovea); blue/violet light filtration (~460nm); retinal membrane photooxidation protection; AMD progression risk reduction (AREDS2); contrast sensitivity and glare recovery improvement; visual fatigue reduction; lens protein oxidation protection (cataract risk); skin UV photoprotection; cognitive function support (CARES trial)</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>MSM (Methylsulfonylmethane) </span><span class="num">1050 mg</span><span class="num">&mdash;</span><span class="num">1050.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Bioavailable sulfur donor; supports glutathione synthesis; anti-inflammatory for osteoarthritis (reduces joint pain and stiffness); supports connective tissue collagen cross-linking; reduces muscle soreness post-exercise; synergistic with glucosamine</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Magnesium </span><span class="num">125 mg</span><span class="num">224.67 mg</span><span class="num">349.67 mg</span><span class="warn-text"></span></summary><div class="benefit">muscle and nerve function; bone health; blood pressure regulation; blood sugar regulation; energy production; protein synthesis; stroke risk reduction; cardiovascular health; type 2 diabetes risk reduction; sleep support; testosterone support; insulin sensitivity; allergy relief; cortisol reduction; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Niacin </span><span class="num">3 mg</span><span class="num">&mdash;</span><span class="num">3.00 mg</span><span class="warn-text"></span></summary><div class="benefit">DNA repair (NAD+ precursor); HDL elevation; LDL reduction; nervous system support; skin health; energy metabolism; neurotransmitter synthesis; anti-inflammatory; cardiovascular health; sleep support; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Potassium </span><span class="num">25 mg</span><span class="num">2124.27 mg</span><span class="num">2149.27 mg</span><span class="warn-text"></span></summary><div class="benefit">nerve signal transmission; muscle contractions; fluid balance; blood pressure regulation; stroke prevention; cardiovascular health; testosterone support; insulin sensitivity; allergy relief; sleep support; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>SAMe </span><span class="num">600 mg</span><span class="num">&mdash;</span><span class="num">600.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Primary methyl donor in brain; precursor to monoamine neurotransmitters (serotonin, dopamine, norepinephrine); supports cartilage via glycosaminoglycan synthesis; hepatoprotective via glutathione synthesis; anti-depressant in clinical trials</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Selenium </span><span class="num">25 mcg</span><span class="num">58.39 mcg</span><span class="num">83.39 mcg</span><span class="warn-text"></span></summary><div class="benefit">antioxidant defense; thyroid hormone metabolism; immune function; mood improvement; cholesterol reduction; testosterone support; insulin sensitivity; allergy relief; cortisol reduction; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin B1 (Thiamine) </span><span class="num">4.5 mg</span><span class="num">&mdash;</span><span class="num">4.50 mg</span><span class="warn-text"></span></summary><div class="benefit">Essential coenzyme for pyruvate dehydrogenase (entry point to Krebs cycle); supports glucose metabolism and ATP production; deficiency causes peripheral neuropathy; protects against AGE formation; supports nervous system function</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin B12 </span><span class="num">753 mcg</span><span class="num">&mdash;</span><span class="num">753.00 mcg</span><span class="warn-text"></span></summary><div class="benefit">red blood cell production; nerve function; DNA synthesis; testosterone support; insulin sensitivity; allergy relief; pain reduction</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin B5 (Pantothenic Acid) </span><span class="num">5 mg</span><span class="num">&mdash;</span><span class="num">5.00 mg</span><span class="warn-text"></span></summary><div class="benefit">Precursor to coenzyme A (via pantethine); supports fatty acid synthesis and oxidation; essential for steroid hormone synthesis; supports adrenal cortisol production; wound healing; reduces acne via sebum regulation</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin B6 </span><span class="num">6 mg</span><span class="num">n/a</span><span class="num">6.00 mg</span><span class="warn-text"></span></summary><div class="benefit">fat metabolism; homocysteine regulation; immune function; brain health; testosterone support; insulin sensitivity; allergy relief; pain reduction</div></details>
+<details class="dose-row"><summary><span class="star">&#9733;</span><span>Vitamin C </span><span class="num">730 mg</span><span class="num">138.94 mg</span><span class="num">868.94 mg</span><span class="warn-text"></span></summary><div class="benefit">immune support; collagen synthesis; iron absorption enhancement (plant foods); antioxidant; cataract risk reduction; testosterone support; insulin sensitivity; allergy relief; cortisol reduction; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin D3 </span><span class="num">27.5 mcg</span><span class="num">&mdash;</span><span class="num">27.50 mcg</span><span class="warn-text"></span></summary><div class="benefit">bone health; immune function; mood regulation; muscle strength; brain health; cardiovascular support; anti-inflammatory; insulin sensitivity; cancer risk reduction; testosterone support; autoimmunity inhibition; allergy relief; cortisol reduction; sleep promotion; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Vitamin E </span><span class="num">60 IU</span><span class="num">n/a</span><span class="num">60.00 IU</span><span class="warn-text"></span></summary><div class="benefit">antioxidant; exercise-induced muscle damage reduction; liver inflammation improvement; testosterone support; insulin sensitivity; allergy relief; nasal congestion relief</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Zeaxanthin </span><span class="num">8 mg</span><span class="num">n/a</span><span class="num">8.00 mg</span><span class="warn-text"></span></summary><div class="benefit">foveal center concentration (sharpest vision point - jewelry work relevant); blue light filtration ~460nm; singlet oxygen quenching (more potent than lutein); AREDS2 validated macular protection; photostress recovery improvement; contrast sensitivity in low-light; macular oxidative damage reduction</div></details>
+<details class="dose-row"><summary><span class="hitch">&#9675;</span><span>Zinc </span><span class="num">18.75 mg</span><span class="num">5.85 mg</span><span class="num">24.60 mg</span><span class="warn-text"></span></summary><div class="benefit">immune support; wound healing; DNA synthesis; protein synthesis; cell division; skin health; insulin production; testosterone support; intestinal lining repair; allergy relief; cortisol reduction; sleep promotion; nasal congestion relief</div></details>
+</table>
+</details>
+<footer style="margin-top: 40px; padding-top: 15px; border-top: 1px solid #dee2e6; color: #6c757d; font-size: 12px;">
+        SPECTRA (Supplement Personalization Engine with Compensatory Timing and Regimen Automation)
+        </footer>
+
+</body></html>
